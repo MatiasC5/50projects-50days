@@ -21,7 +21,6 @@ body {
 .progress-container {
   display: flex;
   justify-content: space-between;
-
   position: relative;
   max-width: 100%;
   width: 350px;
@@ -34,7 +33,7 @@ body {
   background-color: #2b2b2b;
   position: absolute;
   top: 57px;
-  left: 42px;
+  left: 41px;
   z-index: -1;
   transform: translateY(-50%);
 }
@@ -43,7 +42,7 @@ body {
   background-color: #80c14b;
   position: absolute;
   top: 57px;
-  left: 42px;
+  left: 41px;
   width: 0%;
   transform: translateY(-50%);
   height: 4px;
@@ -52,7 +51,7 @@ body {
 }
 
 .circle {
-  color: #000;
+  color: #f1f1f1;
   margin: 40px;
   display: flex;
   justify-content: center;
@@ -65,6 +64,7 @@ body {
   padding: 5px;
   font-size: 20px;
   font-weight: 600;
+  background-color: #9c9999;
 }
 
 .circle.active {
@@ -74,7 +74,7 @@ body {
 .btn {
   width: 90px;
   height: 36px;
-  background-color: #3498db;
+  background-color: #80c14b;
   border-radius: 8px;
   border: none;
   color: white;
