@@ -3,7 +3,7 @@ const next = document.getElementById("next");
 const progress = document.getElementById("progress");
 const circles = document.querySelectorAll(".circle");
 
-let currentActive = 1;
+let currentActive = 0;
 
 function update() {
   circles.forEach((circle, index) => {
@@ -17,12 +17,11 @@ function update() {
   const actives = document.querySelectorAll(".active");
 
   progress.style.width =
-    ((currentActive - 1) / (circles.length - 1)) * 100 + "%";
+    ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
 
-  if (actives.length <= 1) {
+  if (currentActive === 1) {
     prev.disabled = true;
-  }
-  if (actives.length === circles.length) {
+  } else if (currentActive === circles.length) {
     next.disabled = true;
   } else {
     prev.disabled = false;
