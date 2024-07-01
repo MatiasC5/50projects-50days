@@ -3,7 +3,7 @@ const next = document.getElementById("next");
 const progress = document.getElementById("progress");
 const circles = document.querySelectorAll(".circle");
 
-let currentActive = 0;
+let currentActive = 1;
 
 function update() {
   circles.forEach((circle, index) => {
