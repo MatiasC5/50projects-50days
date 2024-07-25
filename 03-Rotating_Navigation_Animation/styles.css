@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 1000px;
+}
+
+.circle-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #ff7979;
+  width: 100px;
+  height: 100px;
+  border-bottom-right-radius: 100%;
+}
+
+.circle-container > .circle > #open {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  top: 36px;
+  left: 26px;
+}
+
+.circle-container > .circle > #open i {
+  height: 100px;
+}
+
+.circle-container > .circle > #close {
+  display: none;
+}
